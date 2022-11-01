@@ -1,0 +1,19 @@
+[project]
+name = "flask_ld_logger"
+description = "Laundarkly controlled logging in a Flask app"
+version = "0.1.0"
+authors = [
+    { name = "thor wolpert", email = "thor@wolpert.ca" }
+]
+dependencies = [
+    "flask",
+    "launchdarkly-server-sdk",
+    "python-dotenv",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "tox",
+    "bump2version"
+]
